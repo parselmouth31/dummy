@@ -21,7 +21,7 @@
 			<flow-ref doc:name="Flow-ref to dummyFlow" doc:id="3fc45827-ee52-4cc5-8c99-e4ed79b660d9" name="dummyFlow"/>
 		</munit:execution>
 		<munit:validation >
-			<munit-tools:assert-that doc:name="Assert that" doc:id="0d4a0043-9ab2-491c-aee6-305b218fde0b" is="#[MunitTools::startsWith('Hello')]" message='#["payload doesnot start with Hello"]' expression="#[payload]"/>
+			<munit-tools:assert-that doc:name="Assert that" doc:id="0d4a0043-9ab2-491c-aee6-305b218fde0b" is='#[MunitTools::startsWith("Hello")]' message='#["payload doesnot start with Hello"]' expression="#[payload]"/>
 		</munit:validation>
 	</munit:test>
 
